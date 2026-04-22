@@ -9,7 +9,7 @@ RUN mvn dependency:go-offline -B
 
 # ソースをコピーしてビルド（テストはJenkinsfileで実行するのでスキップ）
 COPY src ./src
-RUN mvn package -DskipTests -B
+RUN mvn package -B
 
 # ===== Stage 2: 実行環境（軽量） =====
 FROM eclipse-temurin:21-jre-alpine
