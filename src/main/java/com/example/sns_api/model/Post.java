@@ -2,7 +2,7 @@ package com.example.sns_api.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import java.time.LocalDateTime;
+import java.time.LocalDateTime; 
 
 // 【Entityクラス】
 // DBのテーブル1行分をJavaオブジェクトとして表現するクラス。
